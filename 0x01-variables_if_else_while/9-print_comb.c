@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: 'prints all single digit numbers of bases 10 starting from 0 separated by a comma'
+ * Description: 'prints all single digit numbers from 0 separated by a comma'
  *
  * Return: Always 0 (success)
  */
@@ -17,8 +17,10 @@ int main(void)
 {
 		putchar('0' +  num);
 		if (num != 9)
+{
 			putchar(',');
 			putchar(' ');
+}
 		num++;
 }
 	putchar('\n');
