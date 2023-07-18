@@ -19,7 +19,7 @@ void print_times_table(int n)
 		for (clm = 0; clm <= n; clm++)
 {
 			res = (rows * clm);
-			if (res <= n)
+			if (res < 10)
 {
 				if (clm != 0)
 {
@@ -27,7 +27,7 @@ void print_times_table(int n)
 }
 				_putchar('0' + res);
 }
-			else if (res >= 10)
+			else if ((res >= 10) && (res < 100))
 {
 				_putchar('0' + (res / 10));
 				_putchar('0' + (res % 10));
