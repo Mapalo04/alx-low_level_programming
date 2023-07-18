@@ -12,7 +12,7 @@ int main(void)
 	long int pre;
 	long int forw = 2;
 	int mult;
-	int sum;
+	long int sum;
 
 	for (mult = 1; mult <= 50; mult++)
 {
