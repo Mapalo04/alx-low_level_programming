@@ -25,7 +25,7 @@ void jack_bauer(void)
 				_putchar('0' + (hrs / 10));
 				_putchar('0' + (hrs % 10));
 }
-			putchar(':');
+			_putchar(':');
 			if (mins < 10)
 {
 				_putchar('0');
@@ -40,7 +40,7 @@ void jack_bauer(void)
 			mins++;
 }
 		_putchar('0' + hrs);
-		_hrs++;
+		hrs++;
 		mins = 0;
 }
 }
