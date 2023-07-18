@@ -18,7 +18,10 @@ void times_table(void)
 
 			if (res < 10)
 {
+				if (clm != 0)
+{
 				_putchar(' ');
+}
 				_putchar('0' + res);
 }
 			else if (res >= 10)
