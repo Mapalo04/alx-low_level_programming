@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	long int cur = 1;
-	long int pre;
-	long int forw = 2;
-	long int sum;
+	int cur = 1;
+	int pre;
+	int forw = 2;
+	int sum;
 
 	while (cur <= 4000000)
 {
