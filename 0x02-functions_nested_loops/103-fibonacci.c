@@ -15,13 +15,13 @@ int main(void)
 
 	while (cur <= 4000000)
 {
+		pre = cur;
+		cur = forw;
+		forw = pre + cur;
 		if (cur % 2 == 0)
 {
 		sum = sum + cur;
 }
-		pre = cur;
-		cur = forw;
-		forw = pre + cur;
 }
 	printf("%ld", sum);
 	printf("\n");
