@@ -11,7 +11,6 @@ int main(void)
 	long int cur = 1;
 	long int pre;
 	long int forw = 2;
-	int mult;
 	long int sum;
 
 	while (cur <= 4000000)
