@@ -8,9 +8,7 @@
  */
 void print_times_table(int n)
 {
-	int rows = 0;
-	int clm = 0;
-	int res;
+	int rows, clm, res;
 
 	if ((n <= 15) && (n >= 0))
 {
