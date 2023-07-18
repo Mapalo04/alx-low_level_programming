@@ -14,7 +14,7 @@ int main(void)
 	int mult;
 	long int sum;
 
-	for (mult = 1; mult <= 50; mult++)
+	while (cur <= 4000000)
 {
 		if (cur % 2 == 0)
 {
@@ -23,12 +23,8 @@ int main(void)
 		pre = cur;
 		cur = forw;
 		forw = pre + cur;
-		if (cur > 4000000)
-{
-			printf("%ld", sum);
-			break;
 }
-}
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
