@@ -3,7 +3,6 @@
 /**
  * print_most_numbers - prints numbers from 0-9 except 2 and 4
  *
- * Return: 0 if success
  */
 
 
@@ -20,5 +19,4 @@ void print_most_numbers(void)
 	num++;
 }
 	_putchar('\n');
-	return (0);
 }
