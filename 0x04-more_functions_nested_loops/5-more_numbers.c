@@ -3,7 +3,6 @@
 /**
  * more_numbers - prints 10 times numbers from 0-14
  *
- * Return: 0 if success
  */
 
 
@@ -23,5 +22,4 @@ void more_numbers(void)
 	lc++;
 	num = 0;
 }
-	return (0);
 }
