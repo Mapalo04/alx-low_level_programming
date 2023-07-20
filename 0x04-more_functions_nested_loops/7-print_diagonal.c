@@ -4,7 +4,6 @@
  * print_diagonal - prints a diagonal line.
  * @n: is int
  *
- * Return: 0 if success
  */
 
 
@@ -25,5 +24,4 @@ void print_diagonal(int n)
 		_putchar('\n');
 }
 }
-	return (0);
 }
