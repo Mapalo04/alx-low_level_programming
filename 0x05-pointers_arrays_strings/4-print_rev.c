@@ -2,16 +2,16 @@
 
 
 /**
- * _puts - prints a string followed by a new line.
- * @str: is of type char
+ * _print_rev - prints a string in revers followed by a new line.
+ * @s: is of type char
  *
  */
 
-void _puts(char *str)
+void _print_rev(char *s)
 {
 	int n = 0;
 	int start;
-	while (*str )
+	while (*s )
 {
 	n++;
 	str++;
