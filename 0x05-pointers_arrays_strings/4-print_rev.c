@@ -14,7 +14,7 @@ void _print_rev(char *s)
 	while (*s )
 {
 	n++;
-	str++;
+	s++;
 }
 	s--;
 	start = n;
