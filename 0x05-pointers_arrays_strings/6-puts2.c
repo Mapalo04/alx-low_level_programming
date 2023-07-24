@@ -17,6 +17,10 @@ void puts2(char *str)
 {
 	_putchar(*str++);
 }
+	else
+{
+	*str++;
+}
 	count++;
 }
 	_putchar('\n');
