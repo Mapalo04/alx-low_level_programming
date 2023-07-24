@@ -10,16 +10,22 @@
 void puts2(char *str)
 {
 	int count = 0;
+	int t = 0;
+	char *ptr = str;
+	int o;
 
-	while (*str != '\0')
+	while (*ptr != '\0')
 {
-	if (count % 2 == 0)
-{
-	_putchar(*str++);
+	y++;
+	count++;
 }
-	else
+	t = count - 1;
+	o = 0;
+	while (o <= t)
 {
-	*str++;
+	if (o % 2 == 0)
+{
+	_putchar(str[o]);
 }
 	count++;
 }
