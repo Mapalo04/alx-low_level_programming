@@ -9,7 +9,13 @@
 
 int _strlen(char *s)
 {
-	long unsigned int a = sizeof(*s);
+	int a;
+
+	while (*s != '\0')
+{
+	a++;
+	*s++;
+}
 
 	return(a);
 }
