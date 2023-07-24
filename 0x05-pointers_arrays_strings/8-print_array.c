@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 		printf("%d, ", a[c]);
 		c++;
 }
-		if (i == (n - 1))
+		if (c == (n - 1))
 {
 			printf("%d", a[n - 1]);
 }
