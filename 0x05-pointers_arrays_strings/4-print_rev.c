@@ -2,12 +2,12 @@
 
 
 /**
- * _print_rev - prints a string in revers followed by a new line.
+ * print_rev - prints a string in revers followed by a new line.
  * @s: is of type char
  *
  */
 
-void _print_rev(char *s)
+void print_rev(char *s)
 {
 	int n = 0;
 	int start;
