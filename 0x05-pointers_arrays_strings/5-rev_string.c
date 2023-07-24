@@ -23,7 +23,7 @@ void rev_string(char *s)
 	count--;
 	rev = s[i];
 	s[i] = s[count];
-	s[counter] = rev;
+	s[count] = rev;
 	i++;
 }
 }
