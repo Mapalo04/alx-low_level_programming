@@ -22,20 +22,20 @@ int _atoi(char *s)
 	num = 0;
 	while (i <= len)
 {
+		if (s[i] == '-')
+			++np;
 		if (s[i] <= '9' && s[i] >= '0')
 {
-			if ((np == 0) && (s[i - 1] == '-'))
-{
-				np = 1;
-}
 			digit = s[i] - '0';
+			if (np % 2 == 0)
+{
+				digit = -digit;
+}
 			num = num * 10 + digit;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 }
 		i++;
 }
-	if (np == 1)
-		num = -num;
 	return (num);
 }
