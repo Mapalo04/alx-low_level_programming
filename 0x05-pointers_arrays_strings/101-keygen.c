@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -14,7 +15,7 @@ int main(void)
 
 	sum = 0;
 
-	srand(time(NuLL));
+	srand(time(NULL));
 
 	i = 0;
 	while (i < 100)
