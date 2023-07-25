@@ -36,6 +36,6 @@ int _atoi(char *s)
 		i++;
 }
 	if (np == 1)
-		num = num * -1;
+		num = -num;
 	return (num);
 }
