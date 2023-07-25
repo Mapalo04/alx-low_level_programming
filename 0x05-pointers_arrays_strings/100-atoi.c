@@ -17,7 +17,7 @@ int _atoi(char *s)
 {
 		len++;
 }
-	i = 0
+	i = 0;
 	np = 0;
 	num = 0;
 	while (i <= len)
