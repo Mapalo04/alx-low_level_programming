@@ -5,10 +5,10 @@
  * @a: array
  * @n: number of elements
  *
- * Return: reversed array
+ * Return: void
  */
 
-int reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int b;
 	int c;
@@ -16,10 +16,9 @@ int reverse_array(int *a, int n)
 	b = 0;
 	while (b < n--)
 {
-		t = a[b];
+		c = a[b];
 		a[b] = a[n];
-		a[n] = t;
+		a[n] = c;
 		b++;
 }
-	return (a);
 }
