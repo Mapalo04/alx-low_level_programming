@@ -15,11 +15,11 @@ char *rot13(char *str)
 
 	for (b = 0; str[b] != '\0'; b++)
 {
-		for (c = 0; c < 52; j++)
+		for (c = 0; c < 52; c++)
 		{
-			if (s[b] == rotdata[c])
+			if (str[b] == data[c])
 			{
-				s[b] = rotdata[c];
+				str[b] = rotdata[c];
 				break;
 			}
 		}
