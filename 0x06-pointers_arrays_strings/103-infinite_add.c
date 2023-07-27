@@ -22,6 +22,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*r = num1 + num2;
 	if (*r == size_r)
 		return (0);
-	return (r);	
-
+	return (r);
 }
