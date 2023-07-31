@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpn- checks for the number of characters present ins from accept
+ * _strspn - checks for the number of characters present ins from accept
  * @s: string to scan
  * @accept: string to refer to
  *
