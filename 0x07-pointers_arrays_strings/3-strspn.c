@@ -8,14 +8,14 @@
  * Return: number of strings
  */
 
-int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int a = 0;
 	int b;
 
 	while (*s != '\0')
 {
-		for (b = 0; accept[b]: b++)
+		for (b = 0; accept[b]; b++)
 		{
 			if (*s == accept[b])
 			{
@@ -23,7 +23,7 @@ int _strspn(char *s, char *accept)
 				break;
 			}
 			else if (accept[b + 1] == '\0')
-				return (s);
+				return (a);
 		}
 		s++;
 }
