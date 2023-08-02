@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - finds the sqrt of a number
+ * fsqrt - finds the sqrt of a number
  * @a: the number
  * @b: the sqaure root
  *
@@ -27,9 +27,9 @@ int _sqrt_recursion(int n)
 int fsqrt(int a, int b)
 {
 	if (b * b > a)
-		return(-1);
+		return (-1);
 	if (b * b == a)
 		return (b);
 
-	return(fsqrt(a, b + 1));
+	return (fsqrt(a, b + 1));
 }
