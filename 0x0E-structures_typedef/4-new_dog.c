@@ -3,24 +3,28 @@
 #include "dog.h"
 /**
  * _strcopy - copies the string
+ * @str: string to copy
  * @s1: string to copy from
  *
  * Return: a new string
  */
 char *_strcopy(char *str, char *s1)
 {
-	int i;
+	int i, len = 0;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	while (s1[len] != '\0')
+		len++;
+	for (i = 0; i < len; i++)
 	{
 		str[i] = s1[i];
 	}
 	str[i] = '\0';
+
 	return (str);
 }
 
 /**
- * struct new_dog - creates a new dog
+ * new_dog - creates a new dog
  * @name: new name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
@@ -51,8 +55,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	nd->owner = malloc(sizeof(char) * (len2 + 1));
 	if (nd->owner == NULL)
 	{
-		free(nd->name);
 		free(nd);
+		free(nd->name);
 		return (NULL);
 	}
 
