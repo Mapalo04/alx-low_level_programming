@@ -7,23 +7,15 @@
  *
  * Return: a new string
  */
-char *_strcopy(char *s1)
+char *_strcopy(char *str, char *s1)
 {
-	int len = 0, i;
-	char *str;
+	int i;
 
-	while (s1[len])
-		len++;
-	str = malloc(sizeof(char) * len);
-	if (str == NULL)
-	{
-		free(str);
-		return (NULL);
-	}
-	for (i = 0; i < len; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		str[i] = s1[i];
 	}
+	str[i] = '\0';
 	return (str);
 }
 
@@ -38,14 +30,34 @@ char *_strcopy(char *s1)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	int len1 = 0, len2 = 0;
 	dog_t *nd;
+
+	printf("done");
+	while (name[len1] != '\0')
+		len1++;
+	while (owner[len2] != '\0')
+		len2++;
 
 	nd = malloc(sizeof(dog_t));
 	if (nd == NULL)
 		return (NULL);
+	nd->name = malloc(sizeof(char) * (len1 + 1));
+	if (nd->name == NULL)
+	{
+		free(nd);
+		return (NULL);
+	}
+	nd->owner = malloc(sizeof(char) * (len2 + 1));
+	if (nd->owner == NULL)
+	{
+		free(nd->name);
+		free(nd);
+		return (NULL);
+	}
 
-	nd->name = _strcopy(name);
-	nd->owner = _strcopy(owner);
+	_strcopy(nd->name, name);
+	_strcopy(nd->owner, owner);
 	nd->age = age;
 
 	return (nd);
