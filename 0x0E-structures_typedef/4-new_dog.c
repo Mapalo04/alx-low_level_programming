@@ -16,7 +16,10 @@ char *_strcopy(char *s1)
 		len++;
 	str = malloc(sizeof(char) * len);
 	if (str == NULL)
+	{
+		free(str);
 		return (NULL);
+	}
 	for (i = 0; i < len; i++)
 	{
 		str[i] = s1[i];
@@ -39,15 +42,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	nd = malloc(sizeof(dog_t));
 	if (nd == NULL)
-	{
-		free(nd);
 		return (NULL);
-	}
-	nd->name = name;
-	nd->age = age;
-	nd->owner = owner;
 
-	name = _strcopy(nd->owner);
-	owner = _strcopy(nd->owner);
+	nd->name = _strcopy(name);
+	nd->owner = _strcopy(owner);
+	nd->age = age;
+
 	return (nd);
 }
