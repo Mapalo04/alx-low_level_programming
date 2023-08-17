@@ -8,7 +8,6 @@
  * @n: number to print
  * @...: more numbers
  *
- *Return: sum else 0;
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
