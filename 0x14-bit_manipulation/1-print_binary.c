@@ -7,7 +7,7 @@
  *
  */
 
-void print_binary(unsigned long int n);
+void print_binary(unsigned long int n)
 {
 	int i, a = 0;
 	unsigned long int new;
@@ -21,9 +21,9 @@ void print_binary(unsigned long int n);
 			_putchar('1');
 			a++;
 		}
-		else if(a)
+		else if (a)
 			_putchar(0);
 	}
-	if(!a)
+	if (!a)
 		_putchar('0');
 }
