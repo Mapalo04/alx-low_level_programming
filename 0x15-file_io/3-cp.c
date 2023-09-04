@@ -29,12 +29,11 @@ int main(int argc, char *argv[])
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do
-	{
+	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO, 
-				"Error: Can't read from file %s\n",argv[1]);
+			dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -59,9 +58,16 @@ int main(int argc, char *argv[])
 
 }
 
+/**
+ * close_file - closes a file.
+ * @fo: file descriptor.
+ *
+ */
+
 void close_file(int fo)
 {
 	int c;
+
 	c = close(fo);
 	if (c == -1)
 	{
@@ -70,7 +76,12 @@ void close_file(int fo)
 	}
 }
 
-
+/**
+ * create_buffer - creates a buffer to store a file.
+ * @file: the file to store.
+ *
+ * Return: pointer to buffer file.
+ */
 
 char *create_buffer(char *file)
 {
